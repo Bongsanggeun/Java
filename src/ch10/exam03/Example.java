@@ -9,7 +9,7 @@ public class Example {
       Scanner scanner = new Scanner(System.in);
       String[] arr = new String[3];
       
-      while(true) {
+      while(true) { // sdf
          try {
         	System.out.print("저장위치:");
             int index = Integer.parseInt(scanner.nextLine());
