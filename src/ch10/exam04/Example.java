@@ -1,4 +1,4 @@
-package ch10.exam03;
+package ch10.exam04;
 
 import java.util.Scanner;
 
@@ -15,9 +15,9 @@ public class Example {
             int index = Integer.parseInt(scanner.nextLine());
             System.out.print("저장할값:");
             arr[index] = scanner.nextLine();
-         } catch(NumberFormatException e) {
-            System.out.println("숫자만 가능합니다.");
          } catch(ArrayIndexOutOfBoundsException e) {
+            System.out.println("숫자만 가능합니다.");
+         } catch(Exception e) {
         	 System.out.println("0~" + (arr.length-1) + "까지 가능합니다.");
          } finally {
             System.out.println("다시 입력하세요.");
