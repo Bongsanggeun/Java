@@ -7,7 +7,10 @@ public class Example {
 		try {
 			method();
 		}catch (Exception e) {
+			//예외 메시지별로 예외처리를 할 때 사용
 			String message = e.getMessage();
+			System.out.println(message);
+			//디버깅할 때 사용할 수 있는 예외 정보
 			System.out.println(e.toString());
 			e.printStackTrace();
 		}
