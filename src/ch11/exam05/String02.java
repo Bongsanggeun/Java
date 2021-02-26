@@ -26,8 +26,10 @@ public class String02 {
 		
 		//문자열 분리하기: 방법3
 		StringTokenizer st = new StringTokenizer(ssn, "-");
-		first = st.nextToken();
-		second = st.nextToken();
+		while(st.hasMoreTokens()){
+			String token = st.nextToken();
+			System.out.println(token);
+		}
 		
 		//포함 여부: 방법1
 		String content = "이것은 자바 책입니다.";
