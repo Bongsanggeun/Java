@@ -13,6 +13,9 @@ public class Example {
 		
 		String driver = prop.getProperty("driver");
 		System.out.println(driver);
+		
+		String nation = prop.getProperty("nation");
+		System.out.println(nation);
 	}
 
 }
