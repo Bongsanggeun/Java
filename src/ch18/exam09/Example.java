@@ -13,9 +13,9 @@ public class Example {
 		try {
 			Writer writer = new FileWriter(filePath);
 			
-			writer.write(new char[] {'A', 'ÇÑ'});
-			writer.write(new char[] {'B', '±Û', 'C', 'D'}, 0,2);
-			writer.write("¿À´ÃÀº ³¯¾¾°¡ È­Ã¢ÇÕ´Ï´Ù.");
+			writer.write(new char[] {'A', 'B'});
+			writer.write(new char[] {'B', 'A', 'C', 'D'}, 0,2);
+			writer.write("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È­Ã¢ï¿½Õ´Ï´ï¿½.");
 			writer.flush();
 			
 			writer.close();
